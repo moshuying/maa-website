@@ -1,0 +1,14 @@
+# Nuxt.js 3
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
+# System Files
+.DS_Store
+desktop.ini
+Thumbs.db

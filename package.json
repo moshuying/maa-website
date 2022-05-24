@@ -1,0 +1,29 @@
+{
+  "name": "maa-website",
+  "author": "MAA Dev Team",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "build": "pnpm generate",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.ts,.vue\"",
+    "lint:prettier": "prettier --check .",
+    "lint": "pnpm lint:js && pnpm lint:prettier",
+    "lintfix": "prettier --write --list-different . && pnpm lint:js --fix"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "nuxt": "3.0.0-rc.3",
+    "postcss": "^8.4.14",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4"
+  }
+}
