@@ -206,6 +206,11 @@
                         }
                     },
                     "description": "可选项，针对常见识别错的文字进行替换（支持正则）"
+                },
+                "replace_all": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "可选项，文字识别是否需要全字匹配（不能多字），默认为 false\nfalse 时只要是子串即可：例如 text: [ \"开始\" ]，实际识别到了 \"开始行动\"，也算识别成功；\ntrue 时则必须识别到了 \"开始\"，多一个字都不行"
                 }
             },
             "description": "文字识别",
