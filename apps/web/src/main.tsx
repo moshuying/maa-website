@@ -4,9 +4,14 @@ import { BrowserTracing } from '@sentry/tracing'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { SWRConfig } from 'swr'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-import App from './App'
+
 import { fetch } from './utils/fetch'
+import {router} from './router/index'
 
 import './index.css'
 
@@ -25,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         suspense: true,
       }}
     >
-      <App />
+      <RouterProvider router={router} />
     </SWRConfig>
   </React.StrictMode>,
 )

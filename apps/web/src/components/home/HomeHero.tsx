@@ -18,8 +18,11 @@ export const HomeHero: FC = () => {
 
   return (
     <>
-      <AnimatedBlobs />
-      <div className="absolute h-full w-full flex items-center">
+      {/* <AnimatedBlobs /> */}
+      <div className="absolute text-white">
+      test
+      </div>
+      {/* <div className="absolute h-full w-full flex items-center">
         <section className="h-[100vmin] w-full relative">
           {windowDimensions.height >= 768 && (
             <ErrorBoundary
@@ -43,11 +46,11 @@ export const HomeHero: FC = () => {
             </ErrorBoundary>
           )}
         </section>
-      </div>
-      <HomeHeroHeader />
-      <HomeActions />
-      <HomeLinks ref={linkRef} />
-      <HomeIndicator ref={indicatorRef} />
+      </div> */}
+      {/* <HomeHeroHeader /> */}
+      {/* <HomeActions /> */}
+      {/* <HomeLinks ref={linkRef} /> */}
+      {/* <HomeIndicator ref={indicatorRef} /> */}
     </>
   )
 }
